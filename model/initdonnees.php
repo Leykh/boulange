@@ -1,6 +1,7 @@
 <?php 
   require_once "../outil/outils.php";
-  require_once "../model/OrdiManager.php"; 
+  require_once "../model/ordiManager.php"; 
+  creerOrdiBd();
   
   $ordi = array
         (
@@ -138,5 +139,9 @@
   function getTabOrdis(){
     global $tabOrdis;
     return $tabOrdis;
+  }
+
+  foreach($tabOrdis as $ordi){
+    ajouterOrdiBd($ordi['denomination'],$ordi['prix'],$ordi['processeur'],$ordi['ecran'],$ordi['vive'],$ordi['image'],$ordi['lien']);
   }
   
