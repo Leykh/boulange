@@ -1,5 +1,6 @@
 <?php ob_start()?>
-<?php require_once "model/OrdiManager.php"; ?>
+<?php require_once "model/ordiManager.php"; ?>
+<?php require_once "template.php"; ?>
 <?php //afficherTableau($tabOrdis,"tabOrdis"); ?>
 
 <div class="container">

@@ -13,7 +13,6 @@
     <h1 class="relief">Ordi</h1>
     <h1 class="relief">des Ordis<h1>
 </div>
-    <!-- https://getbootstrap.com/docs/5.1/components/navs-tabs/ -->
     <div class="container">
         <ul class="nav">
             <li class="nav-item">
