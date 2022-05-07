@@ -37,9 +37,5 @@
         <h2><?php echo $titre ?></h2>
         <?php echo $content ?>
     </div>
-
-    <div class="container">
-        TEST
-    </div>
 </body>
 </html>

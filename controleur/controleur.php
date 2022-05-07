@@ -24,7 +24,7 @@
             $file = $_FILES['image'];
             $repertoire = "public/images/";
             $nomImageAjoute = ajouterImage($file,$repertoire);
-            ajouterOrdiBd($_POST['denomination'],$_POST['prix'],$_POST['processeur'],$_POST['ecran'],$_POST['vive'],$nomImageAjoute,$_POST['descr'],$_POST['lien']);
+            ajouterOrdiBd($_POST['denomination'],$_POST['prix'],$_POST['processeur'],$_POST['ecran'],$_POST['vive'],$nomImageAjoute,$_POST['lien']);
             header("Location: index.php?action=tab");
         }
         function afficherCardOrdi(){
@@ -39,7 +39,7 @@
         function modifiervalidationOrdi(){
             afficherTableau($_POST,"POST");
             echo "Modifier VALIDATION Ordi id<br>";
-            modificationOrdiBD($_POST['id'],$_POST['denomination'],$_POST['prix'],$_POST['processeur'],$_POST['ecran'],$_POST['vive'],$_POST['image'],$_POST['descr'],$_POST['lien']);
+            modificationOrdiBD($_POST['id'],$_POST['denomination'],$_POST['prix'],$_POST['processeur'],$_POST['ecran'],$_POST['vive'],$_POST['image'],$_POST['lien']);
             header("Location: index.php?action=tab");
         }
         function ajouerterOrdiPanier($id){
