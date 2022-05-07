@@ -24,7 +24,8 @@
             $file = $_FILES['image'];
             $repertoire = "public/images/";
             $nomImageAjoute = ajouterImage($file,$repertoire);
-            ajouterOrdiBd($_POST['denomination'],$_POST['prix'],$_POST['processeur'],$_POST['ecran'],$_POST['vive'],$nomImageAjoute,$_POST['lien']);
+            $random = rand(0,99999);
+            ajouterOrdiBd($_POST['denomination'],$_POST['prix'],$_POST['processeur'],$_POST['ecran'],$_POST['vive'],$nomImageAjoute,'https://www.boulanger.com/ref/'.$random);
             header("Location: index.php?action=tab");
         }
         function afficherCardOrdi(){

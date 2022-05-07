@@ -34,7 +34,9 @@ function lireOrdiBd()
 function ajouterOrdiBd($denomination, $prix, $processeur, $ecran, $vive, $image, $lien)
 {
     $pdo = getPdo();
-    $req = "INSERT INTO ordi (denomination, prix , processeur, ecran, vive, image, lien) values (:denomination, :prix, :processeur, :ecran, :vive, :image, :lien)";
+    $req = "
+    INSERT INTO ordi (denomination, prix , processeur, ecran, vive, image, lien)
+    values (:denomination, :prix, :processeur, :ecran, :vive, :image, :lien)";
     $stmt = $pdo->prepare($req);
     $stmt->bindValue(":denomination", $denomination, PDO::PARAM_STR);
     $stmt->bindValue(":prix", $prix, PDO::PARAM_STR);

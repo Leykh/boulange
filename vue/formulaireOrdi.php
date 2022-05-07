@@ -4,20 +4,24 @@ ob_start();
 <div class="container">
     <form method="POST" action="index.php?action=valid-creer" enctype="multipart/form-data">
       <div class="mb-3">
-        <label class="form-label" for="titre">Titre : </label>
-        <input class="form-control" type="text" id="titre" name="titre">
+        <label class="form-label" for="titre">Denomination : </label>
+        <input class="form-control" type="text" id="denomination" name="denomination">
       </div>
       <div class="mb-3">
-        <label class="form-label" for="nbPages">Prix : </label>
-        <input class="form-control" type="number" step=0.01 id="nbPages" name="prix">
+        <label class="form-label" for="titre">Prix : </label>
+        <input class="form-control" type="text" id="prix" name="prix">
       </div>
       <div class="mb-3">
-        <label class="form-label" for="nbPages">Nombre de pages : </label>
-        <input class="form-control" type="number" id="nbPages" name="nbPages">
+        <label class="form-label" for="titre">Processeur : </label>
+        <input class="form-control" type="text" id="processeur" name="processeur">
       </div>
       <div class="mb-3">
-        <label class="form-label" for="descr">Description : </label>
-        <input class="form-control" type="text" id="descr" name="descr">
+        <label class="form-label" for="titre">Ecran : </label>
+        <input class="form-control" type="text" id="ecran" name="ecran">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="titre">Memoire vive : </label>
+        <input class="form-control" type="text" id="vive" name="vive">
       </div>
       <div class="mb-3">
         <label class="form-label" for="image">Image : </label>

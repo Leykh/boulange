@@ -10,8 +10,7 @@
 </head>
 <body >
 <div class="container">
-    <h1 class="relief">Ordi</h1>
-    <h1 class="relief">des Ordis<h1>
+    <h1 class="relief">Boulange</h1>
 </div>
     <div class="container">
         <ul class="nav">
@@ -28,7 +27,7 @@
                 <a class="nav-link" href="index.php?action=panier">Commande</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.php?action=creer">Créer livre</a>
+                <a class="nav-link" href="index.php?action=creer">Créer ordinateur</a>
             </li>
         </ul>
     </div>
