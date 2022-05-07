@@ -68,7 +68,7 @@
                 header("Location: index.php?action=card");
         }
         function supprimerCommande(){
-            $_SESSION['ordi'] = array();
+            $_SESSION['Ordis'] = array();
             afficherTableau($_SESSION,"controleur - supprimerCommand _SESSION");
             header("Location: index.php?action=card");
         }

@@ -3,6 +3,7 @@
     require_once "outil/outils.php";
     session_start();
     $id_session = session_id();
+    echo "id_session : ". $id_session;
     if(empty($_GET['action'])){
         afficherAccueil();
     }
@@ -38,7 +39,7 @@
             }
             elseif($_GET['action'] == 'panier'){ //OK
                 echo "Voir commande";
-                if(isset($_SESSION['ordi']))
+                if(isset($_SESSION['Ordis']))
                     afficherCommande();
                 else echo "La session n'existe pas";
             }
