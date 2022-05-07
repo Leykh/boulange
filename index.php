@@ -23,7 +23,7 @@
                 creerValidationOrdi();
             }
             elseif($_GET['action']=="card"){  //OK
-                afficherCardOrdis();
+                afficherCardOrdi();
             }
             elseif($_GET['action'] == 'modifier'){ //OK
                 modifierOrdi($_GET['id']);

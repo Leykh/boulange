@@ -6,11 +6,11 @@
         }
         function afficherOrdis(){
             $tabOrdis=lireOrdiBd();
-            require "vue/fonction/afficherOrdis.php";
+            require "vue/afficherOrdis.php";
         }
         function afficherOrdi($id){
             $Ordi=lireOrdiById($id);
-            require "vue/fonction/afficherOrdi.php";
+            require "vue/afficherOrdi.php";
         }
         function supprimerOrdi($id){
             supprimerOrdiBD($id);
@@ -18,7 +18,7 @@
             header("Location: index.php?action=tab");
         }
         function creerOrdi(){
-            require "vue/fonction/formulaireOrdi.php";
+            require "vue/formulaireOrdi.php";
         }
         function creerValidationOrdi(){
             $file = $_FILES['image'];
@@ -27,14 +27,14 @@
             ajouterOrdiBd($_POST['denomination'],$_POST['prix'],$_POST['processeur'],$_POST['ecran'],$_POST['vive'],$nomImageAjoute,$_POST['descr'],$_POST['lien']);
             header("Location: index.php?action=tab");
         }
-        function afficherCardOrdis(){
+        function afficherCardOrdi(){
             $tabOrdis=lireOrdi();
-            require "vue/fonction/cardOrdis.php";
+            require "vue/cardOrdi.php";
         }
         function modifierOrdi($id){
             echo "Modifier Ordi id=".$id."<br>";
             $Ordi=lireOrdiById($id);
-            require "vue/fonction/modifierOrdi.php";
+            require "vue/modifierOrdi.php";
         }
         function modifiervalidationOrdi(){
             afficherTableau($_POST,"POST");
@@ -62,7 +62,7 @@
             }
             if(isset($Ordis)){
                 if(count($Ordis) > 0)
-                    require "vue/fonction/afficherCommande.php";
+                    require "vue/afficherCommande.php";
             }
             else //echo "La commande est vide<br>";
                 header("Location: index.php?action=card");
