@@ -1,8 +1,7 @@
 <?php 
-  require_once "../outil/outils.php";
-  require_once "../model/ordiManager.php"; 
-  creerOrdiBd();
-  
+  require_once "outil/outils.php";
+  require_once "model/ordiManager.php"; 
+function init (){
   $ordi = array
         (
             "denomination" => "Ordinateur Apple MACBOOK CTO Pro 13 New M1 16 256 iGris sideral",
@@ -144,4 +143,4 @@
   foreach($tabOrdis as $ordi){
     ajouterOrdiBd($ordi['denomination'],$ordi['prix'],$ordi['processeur'],$ordi['ecran'],$ordi['vive'],$ordi['image'],$ordi['lien']);
   }
-  
+}

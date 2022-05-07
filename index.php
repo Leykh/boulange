@@ -51,6 +51,18 @@
                 echo "Ajouter panier id=".$_GET['id'];
                 ajouerterOrdiPanier($_GET['id']);
             }
+            elseif($_GET['action'] == 'delAll'){
+                supprimerTousOrdi();
+            }
+            elseif($_GET['action'] == 'init'){
+                initOrdi();
+            }
+            elseif($_GET['action'] == 'dropOrdi'){
+                dropTable();
+            }
+            elseif($_GET['action'] == 'createOrdiBD'){
+                createOrdiBD();
+            }
             else {
                 echo "La page n'existe pas";
             } 

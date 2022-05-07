@@ -1,6 +1,7 @@
 <?php
         require_once "model/ordiManager.php";
         require_once "./outil/outils.php";
+        require_once "model/initdonnees.php";
         function afficherAccueil(){
             require "vue/accueil.php";
         }
@@ -15,6 +16,22 @@
         function supprimerOrdi($id){
             supprimerOrdiBD($id);
             $Ordi=lireOrdiById($id);
+            header("Location: index.php?action=tab");
+        }
+        function supprimerTousOrdi(){
+            supprimerTousOrdiBD();
+            header("Location: index.php?action=tab");
+        }
+        function createOrdiBD(){
+            creerOrdiBD();
+            header("Location: index.php?action=tab");
+        }
+        function initOrdi(){
+            init();
+            header("Location: index.php?action=tab");
+        }
+        function dropTable(){
+            deleteOrdiBD();
             header("Location: index.php?action=tab");
         }
         function creerOrdi(){

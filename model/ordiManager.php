@@ -1,7 +1,7 @@
 <?php
 require_once "connexion.php";
 
-function creerOrdiBd()
+function creerOrdiBD()
 {
     $pdo = getPdo();
     $sql = "CREATE TABLE IF NOT EXISTS `ordi` (
@@ -15,6 +15,14 @@ function creerOrdiBd()
         `lien` varchar(150) NOT NULL,
         PRIMARY KEY (`id`)
         );";
+    $req = $pdo->prepare($sql);
+    $req->execute();
+    $req->closeCursor();
+}
+function deleteOrdiBD()
+{
+    $pdo = getPdo();
+    $sql = "DROP TABLE `ordi`";
     $req = $pdo->prepare($sql);
     $req->execute();
     $req->closeCursor();
