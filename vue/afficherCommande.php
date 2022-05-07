@@ -4,8 +4,8 @@ ob_start();
 <br>
     <a href="index.php?action=supprpanier">Supprimer/payer commande</a><br><br>
     <?php $prixTotal = 0 ?>
-    <?php foreach($Ordis as $Ordi) { ?>     
-        <p><?= $Ordi['titre']; ?> X 1 = <?= $Ordi['prix']; ?></p>
+    <?php foreach($Ordis as $Ordi) { ?>  
+        <p><?= $Ordi['denomination']; ?> X 1 = <?= $Ordi['prix']; ?></p>
         <hr>
         <?php $prixTotal += $Ordi['prix']; ?>
     <?php } ?>   

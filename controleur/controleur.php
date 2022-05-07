@@ -65,8 +65,8 @@
                 if(count($Ordis) > 0)
                     require "vue/afficherCommande.php";
             }
-            else //echo "La commande est vide<br>";
-                header("Location: index.php?action=card");
+            else
+                   require "vue/afficherCommandeVide.php";
         }
         function supprimerCommande(){
             $_SESSION['Ordis'] = array();

@@ -11,33 +11,33 @@
             if($_GET['action']=="tab"){
                 afficherOrdis();
             }
-            elseif($_GET['action'] == 'suppr'){ //OK
+            elseif($_GET['action'] == 'suppr'){
                 supprimerOrdi($_GET['id']);
             }
-            else if($_GET['action'] == 'lire'){ //OK
+            else if($_GET['action'] == 'lire'){
                 afficherOrdi($_GET['id']);
             }
-            elseif($_GET['action'] == 'creer'){ //OK
+            elseif($_GET['action'] == 'creer'){
                 creerOrdi();
             }
-            elseif($_GET['action'] == 'valid-creer'){ //OK
+            elseif($_GET['action'] == 'valid-creer'){
                 creerValidationOrdi();
             }
-            elseif($_GET['action']=="card"){  //OK
+            elseif($_GET['action']=="card"){
                 afficherCardOrdi();
             }
-            elseif($_GET['action'] == 'modifier'){ //OK
+            elseif($_GET['action'] == 'modifier'){
                 modifierOrdi($_GET['id']);
             }
-            elseif($_GET['action'] == 'valid-modifier'){//OK
+            elseif($_GET['action'] == 'valid-modifier'){
                 echo "Modifier validation";
                 modifierValidationOrdi();
             }
-            elseif($_GET['action'] == 'addpanier'){ //OK
+            elseif($_GET['action'] == 'addpanier'){
                 echo "Ajouter panier id=".$_GET['id'];
                 ajouerterOrdiPanier($_GET['id']);
             }
-            elseif($_GET['action'] == 'panier'){ //OK
+            elseif($_GET['action'] == 'panier'){
                 echo "Voir commande";
                 if(isset($_SESSION['Ordis']))
                     afficherCommande();
@@ -47,7 +47,7 @@
                 echo "Supprimer commande";
                 supprimerCommande();
             }
-            elseif($_GET['action'] == 'addpanier'){ //OK
+            elseif($_GET['action'] == 'addpanier'){
                 echo "Ajouter panier id=".$_GET['id'];
                 ajouerterOrdiPanier($_GET['id']);
             }
