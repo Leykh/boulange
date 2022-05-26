@@ -41,7 +41,7 @@
                 echo "Voir commande";
                 if(isset($_SESSION['Ordis']))
                     afficherCommande();
-                else echo "La session n'existe pas";
+                else else afficherCommandeVide();
             }
             elseif($_GET['action']=="supprpanier"){ 
                 echo "Supprimer commande";
