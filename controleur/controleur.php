@@ -85,6 +85,9 @@
             else
                    require "vue/afficherCommandeVide.php";
         }
+        function afficherCommandeVide(){
+            require "vue/afficherCommandeVide.php";
+        }
         function supprimerCommande(){
             $_SESSION['Ordis'] = array();
             afficherTableau($_SESSION,"controleur - supprimerCommand _SESSION");
