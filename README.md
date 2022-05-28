@@ -13,4 +13,4 @@ Boulange est un projet d'apllication web qui permet la gestion et la commande d'
 * HTML
 
 ## Informations
-Pour plus d'informations, n'hésitez pas à consulter le wiki de [ce repositories](https://github.com/Leykh/boulange/wiki). Pour une installation simple et détaillé, vous pouvez suivre [ce tutoriel](https://github.com/Leykh/boulange/wiki/Setup).
+Pour plus d'informations, n'hésitez pas à consulter le [wiki](https://github.com/Leykh/boulange/wiki) de ce repositories. Pour une installation simple et détaillé, vous pouvez suivre [ce tutoriel](https://github.com/Leykh/boulange/wiki/Setup).
