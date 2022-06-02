@@ -13,6 +13,10 @@
             $Ordi=lireOrdiById($id);
             require "vue/afficherOrdi.php";
         }
+        function afficherOrdiSeul($id){
+            $Ordi=lireOrdiById($id);
+            require "vue/afficherOrdiSeul.php";
+        }
         function supprimerOrdi($id){
             supprimerOrdiBD($id);
             $Ordi=lireOrdiById($id);
