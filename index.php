@@ -35,7 +35,7 @@
             }
             elseif($_GET['action'] == 'addpanier'){
                 echo "Ajouter panier id=".$_GET['id'];
-                ajouerterOrdiPanier($_GET['id']);
+                ajouterOrdiPanier($_GET['id']);
             }
             elseif($_GET['action'] == 'panier'){
                 echo "Voir commande";
@@ -49,7 +49,7 @@
             }
             elseif($_GET['action'] == 'addpanier'){
                 echo "Ajouter panier id=".$_GET['id'];
-                ajouerterOrdiPanier($_GET['id']);
+                ajouterOrdiPanier($_GET['id']);
             }
             elseif($_GET['action'] == 'delAll'){
                 supprimerTousOrdi();
