@@ -1,7 +1,6 @@
-<?php 
-?>
 <br>
 <div class="row">
+        <h3><?= $Ordi['denomination']; ?></h3>
     <div class="col-4">
         <img  style="width:80%; height:auto" src="public/images/<?= $Ordi['image']; ?>">
     </div>
